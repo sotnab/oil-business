@@ -13,6 +13,7 @@ const events = require('./utils/events')
 
 const { PORT } = process.env
 
+// handler for socket.io
 io.on(events.CONNECTION, handler)
 
 httpServer.listen(PORT, () => {

@@ -1,7 +1,6 @@
 const Class = require('../classes/Class')
 
-// default game values
-
+// game phases
 const states = {
     DRAW: 0,
     INVEST: 1,
@@ -9,6 +8,7 @@ const states = {
     SALE: 3
 }
 
+// investor classes
 const classes = {
     landlord: new Class(2, 2, 3, 2),
     engineer: new Class(2, 3, 1, 2),
@@ -26,19 +26,17 @@ const equipmentPrices = {
     fan: 500
 }
 
-
 const resourcePrices = {
     wax: [100, 200, 300],
     oil: [0, 250, 500],
     gas: [100, 200, 400]
 }
 
-// methods to randomize
-
+// randomize investor class
 const randomizeClass = () => {
     const keys = Object.keys(classes)
     const key = Math.floor(Math.random() * keys.length)
-    
+
     return classes[key]
 }
 

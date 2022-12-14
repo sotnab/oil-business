@@ -1,7 +1,6 @@
+// socket.io events
 const events = {
-    CONNECTION: 'connection',
-    CREATE_LOBBY: 'create-lobby',
-    JOIN_LOBBY: 'join-lobby',
+    CONNECTION: 'connection'
 }
 
 module.exports = events
